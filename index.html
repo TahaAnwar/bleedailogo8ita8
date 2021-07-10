@@ -23,11 +23,14 @@
                     id="animated-asset"
                     src="assets/asset.glb"
                 ></a-asset-item>
-                
-             <a-entity glb-model="#animated-asset" rotation="20 60 30"></a-entity>
 
             </a-assets>
 
+            <a-entity>
+<a-entity gltf-model="#animated-asset" scale="0.5 0.5 0.5" position="0 50 60"  
+animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+</a-entity>
+            
             <a-marker
                 id="animated-marker"
                 type="pattern"
